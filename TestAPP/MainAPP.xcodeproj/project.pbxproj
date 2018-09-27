@@ -13,33 +13,13 @@
 		F14697AC215B5CD3007513D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F14697AB215B5CD3007513D0 /* Assets.xcassets */; };
 		F14697AF215B5CD3007513D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F14697AD215B5CD3007513D0 /* LaunchScreen.storyboard */; };
 		F14697B2215B5CD3007513D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F14697B1215B5CD3007513D0 /* main.m */; };
-		F1469863215B8997007513D0 /* libFlutterAPPLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1469836215B83F8007513D0 /* libFlutterAPPLib.a */; };
-		F146986C215B8DF2007513D0 /* Flutter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F1469861215B8931007513D0 /* Flutter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F14698A6215BDBA9007513D0 /* flutter_assets in Resources */ = {isa = PBXBuildFile; fileRef = F14698A5215BDBA8007513D0 /* flutter_assets */; };
+		F14698B1215CBA43007513D0 /* flutter_assets in Resources */ = {isa = PBXBuildFile; fileRef = F14698B0215CBA43007513D0 /* flutter_assets */; };
+		F14698B3215CBA57007513D0 /* libFlutterAPPLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F14698B2215CBA57007513D0 /* libFlutterAPPLib.a */; };
+		F14698C0215CBCC1007513D0 /* Flutter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F14698BF215CBCC1007513D0 /* Flutter.framework */; };
+		F14698C1215CBCC1007513D0 /* Flutter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F14698BF215CBCC1007513D0 /* Flutter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		F1469835215B83F8007513D0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F1469831215B83F7007513D0 /* FlutterAPPLib.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F14697EC215B6A86007513D0;
-			remoteInfo = FlutterAPPLib;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
-		F146986D215B8DF2007513D0 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				F146986C215B8DF2007513D0 /* Flutter.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F14698A0215B960E007513D0 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -48,6 +28,17 @@
 			files = (
 			);
 			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F14698BB215CBAE9007513D0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F14698C1215CBCC1007513D0 /* Flutter.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -63,9 +54,9 @@
 		F14697AE215B5CD3007513D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F14697B0215B5CD3007513D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F14697B1215B5CD3007513D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F1469831215B83F7007513D0 /* FlutterAPPLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FlutterAPPLib.xcodeproj; path = FlutterAPPLib/FlutterAPPLib.xcodeproj; sourceTree = "<group>"; };
-		F1469861215B8931007513D0 /* Flutter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Flutter.framework; path = FlutterAPPLib/Flutter/engine/Flutter.framework; sourceTree = "<group>"; };
-		F14698A5215BDBA8007513D0 /* flutter_assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = flutter_assets; path = FlutterAPPLib/Flutter/flutter_assets; sourceTree = "<group>"; };
+		F14698B0215CBA43007513D0 /* flutter_assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = flutter_assets; path = ../FlutterAPPLib/Flutter/flutter_assets; sourceTree = "<group>"; };
+		F14698B2215CBA57007513D0 /* libFlutterAPPLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFlutterAPPLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F14698BF215CBCC1007513D0 /* Flutter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Flutter.framework; path = ../FlutterAPPLib/Flutter/engine/Flutter.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1469863215B8997007513D0 /* libFlutterAPPLib.a in Frameworks */,
+				F14698B3215CBA57007513D0 /* libFlutterAPPLib.a in Frameworks */,
+				F14698C0215CBCC1007513D0 /* Flutter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,8 +75,8 @@
 		F1469796215B5CD1007513D0 = {
 			isa = PBXGroup;
 			children = (
-				F14698A5215BDBA8007513D0 /* flutter_assets */,
-				F1469831215B83F7007513D0 /* FlutterAPPLib.xcodeproj */,
+				F14698BF215CBCC1007513D0 /* Flutter.framework */,
+				F14698B0215CBA43007513D0 /* flutter_assets */,
 				F14697A1215B5CD1007513D0 /* MainAPP */,
 				F14697A0215B5CD1007513D0 /* Products */,
 				F14697D3215B64AF007513D0 /* Frameworks */,
@@ -118,17 +110,9 @@
 		F14697D3215B64AF007513D0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F1469861215B8931007513D0 /* Flutter.framework */,
+				F14698B2215CBA57007513D0 /* libFlutterAPPLib.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F1469832215B83F7007513D0 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F1469836215B83F8007513D0 /* libFlutterAPPLib.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +125,8 @@
 				F146979B215B5CD1007513D0 /* Sources */,
 				F146979C215B5CD1007513D0 /* Frameworks */,
 				F146979D215B5CD1007513D0 /* Resources */,
-				F146986D215B8DF2007513D0 /* Embed Frameworks */,
 				F14698A0215B960E007513D0 /* Copy Files */,
+				F14698BB215CBAE9007513D0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -178,12 +162,6 @@
 			mainGroup = F1469796215B5CD1007513D0;
 			productRefGroup = F14697A0215B5CD1007513D0 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = F1469832215B83F7007513D0 /* Products */;
-					ProjectRef = F1469831215B83F7007513D0 /* FlutterAPPLib.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				F146979E215B5CD1007513D0 /* MainAPP */,
@@ -191,22 +169,12 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		F1469836215B83F8007513D0 /* libFlutterAPPLib.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libFlutterAPPLib.a;
-			remoteRef = F1469835215B83F8007513D0 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
 		F146979D215B5CD1007513D0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F14698A6215BDBA9007513D0 /* flutter_assets in Resources */,
+				F14698B1215CBA43007513D0 /* flutter_assets in Resources */,
 				F14697AF215B5CD3007513D0 /* LaunchScreen.storyboard in Resources */,
 				F14697AC215B5CD3007513D0 /* Assets.xcassets in Resources */,
 				F14697AA215B5CD1007513D0 /* Main.storyboard in Resources */,
@@ -368,7 +336,7 @@
 				DEVELOPMENT_TEAM = CSPD6W6XCH;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/FlutterAPPLib/Flutter/engine",
+					"$(PROJECT_DIR)/../FlutterAPPLib/Flutter/engine",
 				);
 				INFOPLIST_FILE = MainAPP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -389,7 +357,7 @@
 				DEVELOPMENT_TEAM = CSPD6W6XCH;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/FlutterAPPLib/Flutter/engine",
+					"$(PROJECT_DIR)/../FlutterAPPLib/Flutter/engine",
 				);
 				INFOPLIST_FILE = MainAPP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
